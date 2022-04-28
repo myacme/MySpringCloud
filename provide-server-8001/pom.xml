@@ -12,6 +12,8 @@
     <artifactId>provide-server-8001</artifactId>
     <packaging>jar</packaging>
 
+    <name>provide-server-8001</name>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

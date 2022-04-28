@@ -11,6 +11,8 @@
     <artifactId>eurake-server-7001</artifactId>
     <packaging>jar</packaging>
 
+    <name>eurake-server-7001</name>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

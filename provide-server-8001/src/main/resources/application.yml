@@ -3,12 +3,17 @@ server:
 
 spring:
   application:
-    name: provide-server-8001
+    name: provide-server
 
 eureka:
   client:
     serviceUrl:
       #      单机
-      #      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://localhost:7001/eureka/
       #      集群
-      defaultZone: http://eruake7001.com:7001/eureka/,http://eruake7002.com:7002/eureka/
+  #    defaultZone: http://eruake7001.com:7001/eureka/,http://eruake7002.com:7002/eureka/
+  instance:
+    instance-id: provide-server-8001  #修改主机名称
+    prefer-ip-address: true   #访问路径显示IP地址
+    lease-renewal-interval-in-seconds: 30  #向注册中心发送心跳的时间间隔，默认30秒
+    lease-expiration-duration-in-seconds: 90  #等待心跳的时间上限，默认90秒，超时将剔除服务

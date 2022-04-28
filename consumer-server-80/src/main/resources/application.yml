@@ -1,10 +1,10 @@
 eureka:
   client:
     serviceUrl:
-#      单机
-#      defaultZone: http://localhost:7001/eureka/
+      #      单机
+      defaultZone: http://localhost:7001/eureka/
 #      集群
-      defaultZone: http://eruake7001.com:7001/eureka/,http://eruake7002.com:7002/eureka/
+#      defaultZone: http://eruake7001.com:7001/eureka/,http://eruake7002.com:7002/eureka/
 
 server:
   port: 80

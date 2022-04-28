@@ -4,17 +4,17 @@ server:
 eureka:
   instance:
     #    单机
-    #    hostname: localhost
+    hostname: localhost
     #    集群
-    hostname: eruake7002.com
+#    hostname: eruake7002.com
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
 #      单机
-#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 #      集群
-      defaultZone: http://eruake7001.com:7001/eureka/
+#      defaultZone: http://eruake7001.com:7001/eureka/
 
 spring:
   application:

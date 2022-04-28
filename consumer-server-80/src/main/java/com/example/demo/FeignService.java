@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @version 1.0.0
  * @create 2022/3/18 15:18
  */
-@FeignClient(value = "provide-server-8001")
+@FeignClient(value = "provide-server")
 public interface FeignService {
 
 	@GetMapping()
