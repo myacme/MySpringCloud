@@ -3,28 +3,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>consumer-server-80</artifactId>
-    <packaging>jar</packaging>
-
-    <name>consumer-server-80</name>
-
     <parent>
         <artifactId>MySpringCloud</artifactId>
         <groupId>groupId</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <properties>
-    </properties>
+    <artifactId>eurake-provide-server-8001</artifactId>
+    <packaging>jar</packaging>
+
+    <name>eurake-provide-server-8001</name>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -47,5 +40,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

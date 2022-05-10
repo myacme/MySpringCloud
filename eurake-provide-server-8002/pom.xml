@@ -9,10 +9,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>provide-server-8001</artifactId>
+    <artifactId>eurake-provide-server-8002</artifactId>
     <packaging>jar</packaging>
 
-    <name>provide-server-8001</name>
+    <name>eurake-provide-server-8002</name>
 
     <dependencies>
         <dependency>

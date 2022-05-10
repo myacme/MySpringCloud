@@ -3,23 +3,18 @@ package com.example.demo;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Map;
 
 /**
  * @author MyAcme
  */
 @SpringBootApplication
-@EnableEurekaClient
-@RestController
-public class ProvideServerApplication8002 {
+@EnableDiscoveryClient  //consul 与 zookeeper 注册注解
+public class ProvideServerApplication8004 {
+
 	public static void main(String[] args) {
-		SpringApplication.run(ProvideServerApplication8002.class, args);
+		SpringApplication.run(ProvideServerApplication8004.class, args);
 	}
 
 	@Value("${server.port}")
@@ -27,6 +22,7 @@ public class ProvideServerApplication8002 {
 
 	@RequestMapping()
 	public String production() {
-		return "我是生产者！" + port;
+		return "我是Zookeeper生产者！" + port;
 	}
+
 }

@@ -34,7 +34,7 @@ public class ProvideServerApplication8001 {
 
 	@GetMapping()
 	public String production() {
-		return "我是生产者！" + port;
+		return "我是Eurake生产者！" + port;
 	}
 
 	/**
