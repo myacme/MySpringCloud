@@ -15,6 +15,9 @@
         <module>eurake-provide-server-8001</module>
         <module>eurake-provide-server-8002</module>
         <module>zookeeper-provide-server-8004</module>
+        <module>consul-provide-server-8005</module>
+        <module>geteway-9527</module>
+        <module>config-server</module>
     </modules>
 
     <properties>

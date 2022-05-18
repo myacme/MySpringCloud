@@ -2,33 +2,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
     <parent>
         <artifactId>MySpringCloud</artifactId>
         <groupId>groupId</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>zookeeper-provide-server-8004</artifactId>
+    <artifactId>consul-provide-server-8005</artifactId>
     <packaging>jar</packaging>
 
-    <name>zookeeper-provide-server-8004</name>
+    <name>consul-provide-server-8005</name>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.apache.zookeeper</groupId>
-                    <artifactId>zookeeper</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-            <version>3.8.0</version>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
