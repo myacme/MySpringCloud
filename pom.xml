@@ -18,6 +18,9 @@
         <module>consul-provide-server-8005</module>
         <module>geteway-9527</module>
         <module>config-server</module>
+        <module>stream-rabbitmq-provide-8801</module>
+        <module>stream-rabbitmq-comsumer-8802</module>
+        <module>stream-rabbitmq-consumer-8803</module>
     </modules>
 
     <properties>
