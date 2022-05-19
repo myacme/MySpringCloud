@@ -11,7 +11,7 @@
     <modules>
         <module>eurake-server-7001</module>
         <module>eurake-server-7002</module>
-        <module>consumer-server-80</module>
+        <module>eurake-consumer-server-80</module>
         <module>eurake-provide-server-8001</module>
         <module>eurake-provide-server-8002</module>
         <module>zookeeper-provide-server-8004</module>
@@ -21,6 +21,9 @@
         <module>stream-rabbitmq-provide-8801</module>
         <module>stream-rabbitmq-comsumer-8802</module>
         <module>stream-rabbitmq-consumer-8803</module>
+        <module>alibaba-provide-server-9001</module>
+        <module>alibaba-provide-server-9002</module>
+        <module>alibaba-consumer-server-80</module>
     </modules>
 
     <properties>

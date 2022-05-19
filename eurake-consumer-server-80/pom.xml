@@ -6,7 +6,7 @@
     <artifactId>consumer-server-80</artifactId>
     <packaging>jar</packaging>
 
-    <name>consumer-server-80</name>
+    <name>eurake-consumer-server-80</name>
 
     <parent>
         <artifactId>MySpringCloud</artifactId>
