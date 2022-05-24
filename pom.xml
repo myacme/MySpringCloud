@@ -24,6 +24,7 @@
         <module>alibaba-provide-server-9001</module>
         <module>alibaba-provide-server-9002</module>
         <module>alibaba-consumer-server-80</module>
+        <module>alibaba-nacos-config-3377</module>
     </modules>
 
     <properties>
