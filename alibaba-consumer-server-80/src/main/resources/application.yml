@@ -10,6 +10,11 @@ spring:
         server-addr: 192.168.152.128:8848
 
 
+# 激活Sentinel对Feign的支持
+feign:
+  sentinel:
+    enabled: true
+
 #消费者将要去访问的微服务名称(注册成功进nacos的微服务提供者)
 service-url:
   nacos-user-service: nacos-provider-server
